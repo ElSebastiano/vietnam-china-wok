@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Speisekarte – Vietnam China Wok Konstanz</title>
-<meta name="description" content="Beispielhafte Speisekarten-Übersicht von Vietnam China Wok in Konstanz: Suppen, Frühlingsrollen, Wok-Nudeln, Reisgerichte und Wok-Spezialitäten.">
+<meta name="description" content="Die vollständige Speisekarte von Vietnam China Wok in Konstanz: über 50 Gerichte aus Huhn, Ente, Rind, Schwein, Garnelen, Thai-Currys und vegetarisch – interaktiv filterbar nach Schärfe und vegetarischen Optionen, inkl. Allergenkennzeichnung.">
 <link rel="canonical" href="https://vietnam-china-wok.aurora-innovations.de/speisekarte.html">
 <meta name="theme-color" content="#1B140F">
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="site-header">
+<header class="site-header site-header--solid">
   <div class="container">
     <a class="brand" href="index.html">
       <span class="brand-mark" aria-hidden="true">V</span>
@@ -39,64 +39,724 @@
   </div>
 </header>
 
-<main id="main" class="legal-page">
+<main id="main" class="menu-page">
+
+  <section class="menu-hero">
+    <img class="menu-hero-img" src="assets/hero-frames/desktop/f_0192.webp" alt="" aria-hidden="true" loading="eager">
+    <div class="menu-hero-content container">
+      <p class="eyebrow">Die ganze Karte</p>
+      <h1>Scharf, ehrlich, direkt aus dem Wok</h1>
+      <p class="lede">Über 50 Gerichte aus Huhn, Ente, Rind, Schwein, Garnelen und Gemüse – nach Schärfe und vegetarischen Optionen filterbar. Guten Hunger!</p>
+    </div>
+  </section>
+
   <div class="container">
-    <p class="eyebrow">Speisekarte</p>
-    <h1>Unsere Wok-Küche</h1>
 
-    <div class="legal-notice">
-      <strong>Hinweis zur Preisgestaltung:</strong> Hauptgerichte liegen erfahrungsgemäß im Bereich von ca. 5–8 € pro Gericht, ein Mittagstisch häufig bei ca. 10–20 € pro Person. Dies ist eine allgemeine Einordnung, keine verbindliche Preisliste. Die tagesaktuelle, vollständige Karte mit exakten Preisen erhalten Sie im Restaurant oder telefonisch unter <a href="tel:+497531455802">07531 455802</a>.
+    <div class="menu-filters" id="menu-filters" hidden>
+      <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">Alle Gerichte</button>
+      <button type="button" class="filter-chip" data-filter="veg" aria-pressed="false">🌱 Vegetarisch</button>
+      <button type="button" class="filter-chip" data-filter="spicy" aria-pressed="false">🌶️ Scharf &amp; sehr scharf</button>
+      <button type="button" class="filter-chip" data-filter="mild" aria-pressed="false">Mild (ohne Schärfe)</button>
     </div>
 
-    <div class="menu-page-list">
-      <div class="menu-category">
-        <h2>Suppen &amp; Vorspeisen</h2>
-        <div class="menu-items">
-          <div class="menu-line"><span class="name">Pho mit Rind<span class="desc">Klassische vietnamesische Reisnudelsuppe mit Rindfleisch und frischen Kräutern</span></span></div>
-          <div class="menu-line"><span class="name">Tom Kha Gai<span class="desc">Thailändisch angehauchte Kokos-Suppe mit Hähnchen, mild-scharf gewürzt</span></span></div>
-          <div class="menu-line"><span class="name">Peking-Gulaschsuppe<span class="desc">Herzhaft-würzige Suppe nach chinesischer Art</span></span></div>
-          <div class="menu-line"><span class="name">Frühlingsrollen<span class="desc">Knusprig frittiert, mit Gemüsefüllung</span></span></div>
-          <div class="menu-line"><span class="name">Gebackene Wan Tan<span class="desc">Knusprige Teigtaschen als Vorspeise</span></span></div>
-        </div>
-      </div>
+    <nav class="menu-jump" aria-label="Kategorien in dieser Karte">
+      <a href="#cat-huhn">Hühnerfleisch</a>
+      <a href="#cat-ente">Ente</a>
+      <a href="#cat-rind">Rindfleisch</a>
+      <a href="#cat-schwein">Schweinefleisch</a>
+      <a href="#cat-garnelen">Garnelen</a>
+      <a href="#cat-wok">Wok-Spezialitäten</a>
+      <a href="#cat-thai">Thai Currys</a>
+      <a href="#cat-veg">Vegetarisch</a>
+      <a href="#cat-extra">Dessert &amp; Extras</a>
+    </nav>
 
-      <div class="menu-category">
-        <h2>Wok-Nudeln</h2>
-        <div class="menu-items">
-          <div class="menu-line"><span class="name">Bami Goreng-Stil<span class="desc">Eiernudeln mit frischem Gemüse, scharf angebraten im heißen Wok</span></span></div>
-          <div class="menu-line"><span class="name">Entennudeln<span class="desc">Nudelgericht mit zarten Entenstreifen</span></span></div>
-          <div class="menu-line"><span class="name">Wok-Nudeln mit Huhn, Rind oder vegetarisch<span class="desc">Nach Wahl mit Fleisch, Meeresfrüchten oder rein vegetarisch</span></span></div>
-        </div>
+    <!-- HÜHNERFLEISCH ================================================= -->
+    <details class="menu-cat" id="cat-huhn" open>
+      <summary><span class="cat-icon" aria-hidden="true">🐔</span> Hühnerfleischgerichte <span class="cat-count">12 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Alle Hühnerfleischgerichte werden mit gekochtem Reis serviert.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">30.</span> Chop Suey Hühnerfleisch</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Gebraten mit verschiedenem Gemüse (ohne Soße)</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">31.</span> Paniertes Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Bambussprossen, Karotten und Ananas in süß-saurer Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">32a.</span> Koon Bo Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit verschiedenem Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">32b.</span> Paniertes Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit verschiedenem Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">33a.</span> Paniertes Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Zitronengras, Bambussprossen, Karotten, Kokosmilch, Milch in Curry-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">33b.</span> Paniertes Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Erdnusssoße, Kokosmilch und Milch</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Nuss oder Nusserzeugnisse">4</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">34.</span> Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit verschiedenem Gemüse gekocht in Kokosmilch, Milch und Erdnusssoße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Nuss oder Nusserzeugnisse">4</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">35.</span> Hühnerfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit verschiedenem Gemüse gekocht in Kokosmilch, Milch und Curry-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">36.</span> Hühnerfleisch gekocht <em>(Vietnam Art)</em></span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Kurkuma, Gemüse, Kokosmilch und Milch</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">37.</span> Hühnerfleisch gekocht</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Gemüse in süß-saurer Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">38.</span> Gebratene Nudeln mit Ei</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit paniertem Hühnerfleisch und Gemüse (ohne Soße)</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Eier">3</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">39.</span> Gebratener Reis mit Ei</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit paniertem Hühnerfleisch und Gemüse (ohne Soße)</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Eier">3</span>
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+          </span></div>
+        </article>
       </div>
+    </details>
 
-      <div class="menu-category">
-        <h2>Reisgerichte</h2>
-        <div class="menu-items">
-          <div class="menu-line"><span class="name">Gebratener Reis<span class="desc">Klassisch mit Ei, Gemüse und Fleisch oder Meeresfrüchten nach Wahl</span></span></div>
-          <div class="menu-line"><span class="name">Reis- und Nudelgerichte mit Fleischauswahl<span class="desc">Verschiedene Fleischsorten, freundlich beraten vom Team</span></span></div>
-        </div>
+    <!-- ENTE =========================================================== -->
+    <details class="menu-cat" id="cat-ente">
+      <summary><span class="cat-icon" aria-hidden="true">🦆</span> Entengerichte <span class="cat-count">6 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Alle Entengerichte werden mit gekochtem Reis serviert.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">20.</span> Chop Suey Ente</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Paniert mit Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">21.</span> Panierte Ente</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Ananas, Karotten, Bambussprossen in süß-saurer Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">22.</span> Koon Bo</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekochte Ente mit verschiedenem Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">23.</span> Kan Ton Ente</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Panierte Ente mit verschiedenem Gemüse, Kokosmilch, Milch und Erdnusssoße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">24.</span> Panierte Ente</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Bambussprossen, Karotten, Zitronengras, Kokosmilch, Milch und Curry-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">25.</span> Gekochte Ente</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit verschiedenem Gemüse, Kokosmilch und Milch</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+          </span></div>
+        </article>
       </div>
+    </details>
 
-      <div class="menu-category">
-        <h2>Wok-Spezialitäten</h2>
-        <div class="menu-items">
-          <div class="menu-line"><span class="name">Wok-Spezialität in schwarzer Bohnensauce<span class="desc">Mit Huhn, Rind oder Meeresfrüchten, kräftig-würzig</span></span></div>
-        </div>
+    <!-- RIND =========================================================== -->
+    <details class="menu-cat" id="cat-rind">
+      <summary><span class="cat-icon" aria-hidden="true">🐂</span> Rindfleischgerichte <span class="cat-count">5 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Alle Rindfleischgerichte werden mit gekochtem Reis serviert.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">50.</span> Chop Suey Rindfleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Gebraten mit Gemüse (ohne Soße)</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">51.</span> Gebratenes Rindfleisch <em>(Vietnam Art)</em></span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Zwiebeln, Lauch, Karotten und Zitronengras (ohne Soße)</p>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">52.</span> Koon Bo</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Rindfleisch gekocht mit Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">53.</span> Rindfleisch</span><span class="dish-price">8,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Gemüse, Kokosmilch, Zitronengras und Milch in Curry-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">54.</span> Rindfleisch</span><span class="dish-price">8,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Gemüse, Kokosmilch und Milch in Erdnusssoße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Nuss oder Nusserzeugnisse">4</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
       </div>
+    </details>
 
-      <div class="menu-category">
-        <h2>Getränke</h2>
-        <div class="menu-items">
-          <div class="menu-line"><span class="name">Jasmintee, Softdrinks &amp; Bier<span class="desc">Passend zur Wok-Küche – Auswahl vor Ort</span></span></div>
-        </div>
-      </div>
+    <div class="menu-image-break">
+      <img src="assets/hero-frames/desktop/f_0060.webp" alt="Wok mit Gemüse und Nudeln steht in Flammen auf dem Herd" loading="lazy">
+      <span class="caption">Direkt aus dem Wok</span>
     </div>
 
-    <div class="legal-notice" style="margin-top:2.4rem;">
-      Diese Übersicht basiert auf öffentlich recherchierten Informationen (Restaurant-Bewertungsportale, Stand September 2026) und erhebt keinen Anspruch auf Vollständigkeit. Allergene, exakte Zutaten und aktuelle Preise erfragen Sie bitte direkt im Restaurant.
+    <!-- SCHWEIN ======================================================== -->
+    <details class="menu-cat" id="cat-schwein">
+      <summary><span class="cat-icon" aria-hidden="true">🐖</span> Schweinefleischgerichte <span class="cat-count">7 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Alle Schweinefleischgerichte werden mit gekochtem Reis serviert.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">60.</span> Chop Suey Schweinefleisch</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Gebraten mit Gemüse (ohne Soße)</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">61.</span> Panierte Schweinefleischbällchen</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Ananas, Bambussprossen, Karotten und süß-saurer Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">62.</span> Koon Bo</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekochtes Schweinefleisch mit Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">63.</span> Schweinefleisch <em>(Vietnam Art)</em></span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Gemüse in Sate-Soße</p>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Krebs- oder Weichtiere">2</span>
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">64.</span> Schweinefleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Zitronengras, Gemüse, Kokosmilch und Milch in Curry-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="1" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">65.</span> Schweinefleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Gebraten mit Zwiebeln, Karotten, Lauch und Zitronengras (ohne Soße)</p>
+          <div class="dish-meta">
+            <span class="spice-flames" title="leicht scharf" aria-label="leicht scharf">🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">66.</span> Schweinefleisch</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Gemüse in Kokosmilch, Milch und Erdnusssoße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Nuss oder Nusserzeugnisse">4</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+      </div>
+    </details>
+
+    <!-- GARNELEN ======================================================= -->
+    <details class="menu-cat" id="cat-garnelen">
+      <summary><span class="cat-icon" aria-hidden="true">🦐</span> Garnelengerichte <span class="cat-count">5 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Alle Garnelengerichte werden mit gekochtem Reis serviert.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">70.</span> Chop Suey Garnelen</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Gebraten mit Gemüse (ohne Soße)</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">71.</span> Gebackene Garnelen</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">In Teig gebacken mit Ananas, Karotten, Bambussprossen in süß-saurer Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">72.</span> Koon Bo</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Garnelen gekocht mit Gemüse in Hoisin-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">73.</span> Garnelen</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Gemüse, Zitronengras, Kokosmilch und Milch in Curry-Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">74.</span> Garnelen</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Gekocht mit Gemüse, Kokosmilch und Milch in Erdnusssoße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Nuss oder Nusserzeugnisse">4</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+      </div>
+    </details>
+
+    <!-- WOK SPEZIALITÄTEN ============================================= -->
+    <details class="menu-cat" id="cat-wok">
+      <summary><span class="cat-icon" aria-hidden="true">🔥</span> Wok-Spezialitäten <span class="cat-count">4 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Unsere Signature-Gerichte – ebenfalls mit gekochtem Reis.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">90.</span> Scharfes Schert</span><span class="dish-price">7,50&nbsp;€</span></div>
+          <p class="dish-desc">Rindfleisch mit schwarzer Bohnensoße und Gemüse</p>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">91.</span> Glück im Geschäft</span><span class="dish-price">7,50&nbsp;€</span></div>
+          <p class="dish-desc">Hühnerfleisch mit schwarzer Bohnensoße und Gemüse</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">92.</span> Goldene Perle</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <p class="dish-desc">Hühnerfleisch, Rindfleisch, Schweinefleisch und Entenfleisch zusammen mit Gemüse gebraten, ohne Soße</p>
+          <div class="dish-meta"><span class="allergen-badges">
+            <span class="allergen-badge" title="Glutamate">8</span>
+            <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+            <span class="allergen-badge" title="Austernsoße">11</span>
+          </span></div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">94.</span> Ente gut, alles gut <em>(Vietnam Art)</em></span><span class="dish-price">10,00&nbsp;€</span></div>
+          <p class="dish-desc">Panierte und gekochte Ente mit Chili, Zitronengras und Gemüse</p>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+      </div>
+    </details>
+
+    <!-- THAI CURRYS ==================================================== -->
+    <details class="menu-cat" id="cat-thai">
+      <summary><span class="cat-icon" aria-hidden="true">🌶️</span> Thai Currys <span class="cat-count">7 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Rotes Thai-Curry mit Broccoli, Bohnen, Aubergine und Zucchini in Kokosmilch – dazu wählst du:</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T1.</span> Hühnerfleisch</span><span class="dish-price">8,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T2.</span> Rindfleisch</span><span class="dish-price">9,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T3.</span> Ente</span><span class="dish-price">10,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T4.</span> Garnelen</span><span class="dish-price">10,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T5.</span> Vegetarisch</span><span class="dish-price">8,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T6.</span> Tofu</span><span class="dish-price">8,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+              <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="false">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">T7.</span> Paniertes Hühnerfleisch</span><span class="dish-price">8,00&nbsp;€</span></div>
+          <div class="dish-meta">
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutenhaltige Getreide">1</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            </span>
+          </div>
+        </article>
+      </div>
+    </details>
+
+    <div class="menu-image-break">
+      <img src="assets/hero-frames/desktop/f_0130.webp" alt="Nudeln mit Gemüse schweben über dem heißen Wok" loading="lazy">
+      <span class="caption">Frisch. Heiß. Jetzt.</span>
     </div>
 
-    <p style="margin-top:2rem;"><a class="btn" href="tel:+497531455802">Jetzt anrufen &amp; bestellen</a></p>
+    <!-- VEGETARISCH ==================================================== -->
+    <details class="menu-cat" id="cat-veg">
+      <summary><span class="cat-icon" aria-hidden="true">🌱</span> Vegetarische Gerichte <span class="cat-count">7 Gerichte</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p class="cat-note">Alle vegetarischen Gerichte werden mit gekochtem Reis serviert.</p>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">80.</span> Chop Suey</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Gebratenes Gemüse (ohne Soße)</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">81.</span> Gemüse</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Tofu, Milch, Kokosmilch in Erdnusssoße</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Nuss oder Nusserzeugnisse">4</span>
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+              <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">82.</span> Chop Suey Tofu</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Gemüse (ohne Soße)</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">83.</span> Shao Lin Tofu</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Gemüse, Zitronengras (ohne Soße)</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="2" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">84.</span> Pagode <em>(Vietnam Art)</em></span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Gemüse in Sate-Soße</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="spice-flames" title="scharf" aria-label="scharf">🌶️🌶️</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Krebs- oder Weichtiere">2</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Soja oder Sojaerzeugnisse">5</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+              <span class="allergen-badge" title="Austernsoße">11</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">85.</span> Gebratener Tofu</span><span class="dish-price">7,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit verschiedenem Gemüse, Milch, Kokosmilch und Curry-Soße</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+              <span class="allergen-badge" title="Bohnen (schwarz/hell)">10</span>
+            </span>
+          </div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">86.</span> Verschiedenes Gemüse</span><span class="dish-price">6,00&nbsp;€</span></div>
+          <p class="dish-desc">Mit Kokosmilch, Milch und Curry-Soße</p>
+          <div class="dish-meta">
+            <span class="veg-badge">🌱 Vegetarisch</span>
+            <span class="allergen-badges">
+              <span class="allergen-badge" title="Milch oder Milchprodukte">6</span>
+              <span class="allergen-badge" title="Glutamate">8</span>
+              <span class="allergen-badge" title="Kartoffelmehl">9</span>
+            </span>
+          </div>
+        </article>
+      </div>
+    </details>
+
+    <!-- DESSERT & EXTRAS =============================================== -->
+    <details class="menu-cat" id="cat-extra">
+      <summary><span class="cat-icon" aria-hidden="true">🍌</span> Dessert &amp; Extras <span class="cat-count">3 Positionen</span> <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="dish-grid">
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name">Portion Soße nach Wahl</span><span class="dish-price">2,00&nbsp;€</span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">100.</span> Gebackene Banane</span><span class="dish-price">3,00&nbsp;€</span></div>
+          <div class="dish-meta"><span class="veg-badge">🌱 Vegetarisch</span></div>
+        </article>
+        <article class="dish-card" data-spice="0" data-veg="true">
+          <div class="dish-head"><span class="dish-name"><span class="dish-no">101.</span> Gebackene Ananas</span><span class="dish-price">3,00&nbsp;€</span></div>
+          <div class="dish-meta"><span class="veg-badge">🌱 Vegetarisch</span></div>
+        </article>
+      </div>
+    </details>
+
+    <p id="no-results" class="legal-notice" hidden>Für diesen Filter ist gerade kein Gericht sichtbar. Bitte Filter zurücksetzen.</p>
+
+    <div class="legal-notice" style="margin-top:1.4rem;">
+      Preise und Zusammensetzung entsprechen der von uns bereitgestellten Speisekarte. Alle Gerichte können Geschmacksverstärker enthalten. Änderungen, tagesaktuelle Verfügbarkeit und exakte Zutaten bitte im Restaurant oder telefonisch unter <a href="tel:+497531455802">07531 455802</a> erfragen.
+    </div>
+
+    <details class="allergen-legend">
+      <summary>Allergene &amp; Zusatzstoffe – Legende <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;margin-left:auto;"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <div class="legend-grid">
+        <span><strong>1</strong> – Glutenhaltige Getreide</span>
+        <span><strong>2</strong> – Krebs- oder Weichtiere</span>
+        <span><strong>3</strong> – Eier</span>
+        <span><strong>4</strong> – Nuss oder Nusserzeugnisse</span>
+        <span><strong>5</strong> – Soja oder Sojaerzeugnisse</span>
+        <span><strong>6</strong> – Milch oder Milchprodukte</span>
+        <span><strong>7</strong> – Sesam</span>
+        <span><strong>8</strong> – Glutamate</span>
+        <span><strong>9</strong> – Kartoffelmehl</span>
+        <span><strong>10</strong> – Bohnen (schwarz/hell)</span>
+        <span><strong>11</strong> – Austernsoße</span>
+      </div>
+      <div class="legend-grid" style="padding-top:0;">
+        <span>* leicht scharf &middot; ** scharf &middot; *** sehr scharf</span>
+        <span>Alle Gerichte können Geschmacksverstärker enthalten.</span>
+      </div>
+    </details>
+
+    <p style="margin-top:2rem; text-align:center;"><a class="btn" href="tel:+497531455802">Jetzt anrufen &amp; bestellen</a></p>
   </div>
 </main>
 
@@ -110,5 +770,6 @@
 </footer>
 
 <script src="js/main.js" defer></script>
+<script src="js/menu.js" defer></script>
 </body>
 </html>
