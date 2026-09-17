@@ -36,6 +36,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-h) + 12px);
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -50,6 +51,7 @@ body {
   line-height: 1.6;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
 }
 
 img { max-width: 100%; display: block; }
@@ -62,6 +64,8 @@ h1, h2, h3, h4 {
   margin: 0 0 0.5em;
   color: var(--color-ink);
   font-weight: 600;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); font-weight: 700; }
@@ -441,8 +445,13 @@ p { margin: 0 0 1em; }
 
 @media (max-width: 900px) {
   .hero-wrapper { height: 320vh; }
-  .hero-sticky { min-height: 560px; align-items: flex-start; padding-top: calc(var(--header-h) + 1.6rem); }
-  .hero-meta { gap: 1.4rem; }
+  .hero-sticky { min-height: 560px; align-items: flex-start; padding-top: calc(var(--header-h) + 1rem); padding-bottom: 1.5rem; }
+  .hero-content h1 { font-size: clamp(2.1rem, 7.5vw, 3.2rem); }
+  .hero-actions { margin-top: 1.2rem; gap: 0.75rem; }
+  .hero-meta { gap: 1.2rem; margin-top: 1.25rem; }
+  /* Decorative only; on short mobile viewports it can collide with the
+     stats row below the CTAs, so it's dropped rather than fought with. */
+  .scroll-cue { display: none; }
 }
 
 /* ==========================================================================
@@ -857,19 +866,19 @@ p { margin: 0 0 1em; }
 }
 .menu-jump a:hover, .menu-jump a:focus-visible { color: #fff; background: var(--color-primary); border-color: var(--color-primary); }
 
-.menu-categories {
-  columns: 2;
-  column-gap: 1.5rem;
+.menu-categories.js-balanced {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
-@media (max-width: 860px) {
-  .menu-categories { columns: 1; }
+.menu-col {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .menu-cat {
-  display: inline-block;
+  display: block;
   width: 100%;
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
   background: var(--mp-surface);
   border: 1px solid rgba(200, 16, 46, 0.4);
   border-radius: var(--radius-lg);
@@ -942,6 +951,7 @@ p { margin: 0 0 1em; }
 
 /* JS-only filtering: a dish hidden by the active filter */
 .dish-card[hidden] { display: none; }
+.menu-cat[hidden] { display: none; }
 
 .menu-image-break {
   position: relative;

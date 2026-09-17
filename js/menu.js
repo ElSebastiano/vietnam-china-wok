@@ -1,4 +1,38 @@
 (function () {
+  // Balance each 2-column category group by measured height (instead of
+  // relying on CSS multi-column, which can leave one column much emptier
+  // than the other once every <details> defaults to open). Only runs above
+  // the 2-column breakpoint; below it, categories stay in plain DOM order.
+  if (window.matchMedia("(min-width: 861px)").matches) {
+    document.querySelectorAll(".menu-categories").forEach(function (group) {
+      var items = Array.prototype.slice.call(group.children).map(function (el) {
+        return { el: el, height: el.offsetHeight };
+      });
+      if (items.length < 2) return;
+
+      var colA = document.createElement("div");
+      var colB = document.createElement("div");
+      colA.className = "menu-col";
+      colB.className = "menu-col";
+      var heightA = 0, heightB = 0;
+
+      items.forEach(function (item) {
+        if (heightA <= heightB) {
+          colA.appendChild(item.el);
+          heightA += item.height;
+        } else {
+          colB.appendChild(item.el);
+          heightB += item.height;
+        }
+      });
+
+      group.innerHTML = "";
+      group.appendChild(colA);
+      group.appendChild(colB);
+      group.classList.add("js-balanced");
+    });
+  }
+
   var filterBar = document.getElementById("menu-filters");
   var chips = document.querySelectorAll(".filter-chip");
   var cards = document.querySelectorAll(".dish-card");
