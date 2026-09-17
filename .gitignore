@@ -1,0 +1,14 @@
+research/
+project-manifest.json
+.claude/
+phase1_*.md
+phase2_*.md
+phase3_*.md
+phase4_*.md
+*_Akquise.md
+_claude-launch.json
+_claude-launch.processing.json
+_claude-launch.started.json
+_claude-launch.failed.json
+_claude-launch-status.json
+docs/
