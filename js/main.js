@@ -2,12 +2,20 @@
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("primary-nav");
+  var heroWrapper = document.querySelector(".hero-wrapper");
 
   function onScroll() {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 12);
+    // On the homepage the header stays transparent for as long as the
+    // scroll-jacked hero section still covers the viewport, not just the
+    // first few pixels of scroll.
+    var scrolledPastHero = heroWrapper
+      ? heroWrapper.getBoundingClientRect().bottom <= 0
+      : window.scrollY > 12;
+    header.classList.toggle("is-scrolled", scrolledPastHero);
   }
   window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
   onScroll();
 
   if (toggle && nav) {
@@ -27,4 +35,15 @@
 
   var yearEl = document.getElementById("current-year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  var track = document.getElementById("testimonial-track");
+  if (track) {
+    document.querySelectorAll(".carousel-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = track.querySelector(".testimonial-card");
+        var step = card ? card.getBoundingClientRect().width + 22 : 300;
+        track.scrollBy({ left: step * Number(btn.dataset.dir), behavior: "smooth" });
+      });
+    });
+  }
 })();

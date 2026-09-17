@@ -139,7 +139,7 @@
       <div class="menu-grid">
         <article class="menu-card">
           <figure>
-            <img src="assets/hero-frames/desktop/f_0096.webp" alt="Wok-Gericht mit Gemüse wird direkt aus dem Wok geworfen" loading="lazy" width="840" height="473">
+            <img src="assets/images/dish-wok-special.webp" alt="Wok-Gericht mit Garnelen und frischem Gemüse" loading="lazy" width="900" height="675">
           </figure>
           <div class="menu-card-body">
             <span class="tag">Wok-Spezialitäten</span>
@@ -149,25 +149,27 @@
         </article>
 
         <article class="menu-card">
-          <div class="menu-card-body" style="background:linear-gradient(160deg, var(--color-primary), var(--color-primary-dark)); color:#fff; min-height:100%;">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2c1 2.5-1.5 3.5-1.5 6a3.5 3.5 0 0 0 7 0c0-1-0.3-1.8-0.8-2.5C18 7 19 9 19 11.5 19 16 15.5 20 12 20s-7-4-7-8.5C5 8 6.5 5 9 3c-0.3 1.5 0 2.5 1 3.5C10.5 5 11 3.5 12 2Z"/></svg>
-            <span class="tag" style="color:var(--color-accent)">Thai Currys</span>
-            <h3 style="color:#fff">Rotes Thai-Curry nach Wahl</h3>
-            <p style="color:rgba(255,255,255,0.85)">Mit Broccoli, Bohnen, Aubergine und Zucchini in Kokosmilch – wahlweise mit Huhn, Rind, Ente, Garnelen, Tofu oder vegetarisch.</p>
+          <figure>
+            <img src="assets/images/dish-thai-curry.webp" alt="Rotes Thai-Curry mit Kokosmilch in einer Schale" loading="lazy" width="900" height="675">
+          </figure>
+          <div class="menu-card-body">
+            <span class="tag">Thai Currys</span>
+            <h3>Rotes Thai-Curry nach Wahl</h3>
+            <p>Mit Broccoli, Bohnen, Aubergine und Zucchini in Kokosmilch – wahlweise mit Huhn, Rind, Ente, Garnelen, Tofu oder vegetarisch.</p>
           </div>
         </article>
 
         <article class="menu-card">
-          <div class="menu-card-body" style="background:var(--color-ink); color:#fff; min-height:100%;">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2c-4 3-7 6-7 10a7 7 0 0 0 14 0c0-4-3-7-7-10Z"/></svg>
-            <span class="tag" style="color:var(--color-accent)">Vegetarisch</span>
-            <h3 style="color:#fff">Tofu- &amp; Gemüsegerichte</h3>
-            <p style="color:rgba(255,255,255,0.75)">Von knackigem Chop Suey bis zum würzigen Shao-Lin-Tofu – auch ohne Fleisch großzügig und aromatisch.</p>
+          <figure>
+            <img src="assets/images/dish-veggie-tofu.webp" alt="Gebratener Tofu mit Gemüse und Nudeln" loading="lazy" width="900" height="675">
+          </figure>
+          <div class="menu-card-body">
+            <span class="tag">Vegetarisch</span>
+            <h3>Tofu- &amp; Gemüsegerichte</h3>
+            <p>Von knackigem Chop Suey bis zum würzigen Shao-Lin-Tofu – auch ohne Fleisch großzügig und aromatisch.</p>
           </div>
         </article>
       </div>
-
-      <p class="menu-note"><strong>Hinweis:</strong> Preise und Zusammensetzung laut aktueller Speisekarte des Restaurants – Änderungen vorbehalten. Alle Allergene, Zusatzstoffe und Schärfegrade findest du gekennzeichnet auf der vollständigen, filterbaren Speisekarte.</p>
 
       <div style="margin-top:2rem;">
         <a class="btn btn--ghost" href="speisekarte.html">Zur vollständigen Speisekarten-Übersicht</a>
@@ -205,22 +207,57 @@
         <p class="lede">Ausgewählte, sinngemäß wiedergegebene Stimmen aus öffentlichen Bewertungsportalen.</p>
       </div>
 
-      <div class="testimonial-grid">
-        <article class="testimonial-card">
-          <div class="stars" aria-hidden="true">★★★★★</div>
-          <p>„Das Essen ist super lecker, es kommt schnell und ist in Konstanz echt mein Favorit.“</p>
-          <footer>Gast-Rezension, Online-Bewertungsportal</footer>
-        </article>
-        <article class="testimonial-card">
-          <div class="stars" aria-hidden="true">★★★★☆</div>
-          <p>„Der Chef ist sehr freundlich und die Portionen sind groß – Preis-Leistung stimmt einfach.“</p>
-          <footer>Gast-Rezension, Online-Bewertungsportal</footer>
-        </article>
-        <article class="testimonial-card">
-          <div class="stars" aria-hidden="true">★★★★☆</div>
-          <p>„Gute Auswahl, schnelle und frische Zubereitung und ein super leckeres Endergebnis.“</p>
-          <footer>Gast-Rezension, Online-Bewertungsportal</footer>
-        </article>
+      <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimonial-track">
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>„Das Essen ist super lecker, es kommt schnell und ist in Konstanz echt mein Favorit.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <p>„Der Chef ist sehr freundlich und die Portionen sind groß – Preis-Leistung stimmt einfach.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <p>„Gute Auswahl, schnelle und frische Zubereitung und ein super leckeres Endergebnis.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <p>„Das Essen war gut genießbar und zu fairen Preisen täglich frisch und lecker zubereitet.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>„Eine freundliche Bedienung nahm die Bestellung direkt am Tisch auf.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <p>„Nettes Personal, super feines Essen – Preis-Leistung unschlagbar.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <p>„Highly recommended for super cheap but good food.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="stars" aria-hidden="true">★★★★☆</div>
+            <p>„Wok vietnamesisch, gutes Essen bei rauhem Charme.“</p>
+            <footer>Gast-Rezension</footer>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" class="carousel-btn" data-dir="-1" aria-label="Vorherige Bewertungen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button type="button" class="carousel-btn" data-dir="1" aria-label="Nächste Bewertungen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
       </div>
 
       <div class="rating-banner">
@@ -228,7 +265,6 @@
         <div class="rb-item"><strong>3,8 / 5</strong><span>512 Bewertungen (RestaurantGuru)</span></div>
         <div class="rb-item"><strong>512+</strong><span>zufriedene Stammgäste</span></div>
       </div>
-      <p style="margin-top:1.2rem; font-size:0.82rem; color:var(--color-ink-soft);">Quellen: aggregierte Google-Bewertungen sowie RestaurantGuru, Stand September 2026. Einzelne Erfahrungen können abweichen.</p>
     </div>
   </section>
 
@@ -292,11 +328,10 @@
             <div>
               <h3>Öffnungszeiten</h3>
               <table class="hours-table">
-                <tr><td>Montag</td><td>Ruhetag*</td></tr>
+                <tr><td>Montag</td><td>Ruhetag</td></tr>
                 <tr><td>Dienstag – Freitag</td><td>11:30–21:30</td></tr>
                 <tr><td>Samstag – Sonntag</td><td>12:00–21:30</td></tr>
               </table>
-              <p class="hours-note">*Angaben laut Branchenportalen, ohne Gewähr – bitte bei wichtigen Anlässen telefonisch bestätigen.</p>
             </div>
           </div>
 
@@ -320,20 +355,6 @@
           </iframe>
           <!-- Für eine individuell gestylte Karte kann hier alternativ die Google Maps JavaScript API
                mit eigenem API-Key eingebunden werden: PLATZHALTER_GOOGLE_MAPS_API_KEY -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA ======================================================= -->
-  <section class="section">
-    <div class="container">
-      <div class="final-cta">
-        <h2>Hunger auf frische Wok-Küche?</h2>
-        <p>Rufen Sie an, bestellen Sie zum Mitnehmen oder schauen Sie einfach vorbei – wir freuen uns auf Sie.</p>
-        <div class="hero-actions">
-          <a class="btn btn--on-dark" href="tel:+497531455802">07531 455802 anrufen</a>
-          <a class="btn btn--ghost-on-dark" href="#kontakt">Anfahrt &amp; Öffnungszeiten</a>
         </div>
       </div>
     </div>
@@ -370,7 +391,6 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="current-year">2026</span> Vietnam China Wok, Konstanz</span>
-      <span class="legal-note">Diese Website wurde unabhängig recherchiert und gestaltet. Alle Angaben (insb. Öffnungszeiten, Bewertungen) ohne Gewähr – bitte im Zweifel telefonisch bestätigen.</span>
     </div>
   </div>
 </footer>
