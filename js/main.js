@@ -45,5 +45,43 @@
         track.scrollBy({ left: step * Number(btn.dataset.dir), behavior: "smooth" });
       });
     });
+
+    // Click-and-drag scrolling for mouse users (touch/trackpad already
+    // scroll the track natively).
+    var isDragging = false;
+    var dragMoved = false;
+    var startX = 0;
+    var startScroll = 0;
+
+    track.addEventListener("pointerdown", function (e) {
+      if (e.pointerType === "touch") return;
+      isDragging = true;
+      dragMoved = false;
+      startX = e.clientX;
+      startScroll = track.scrollLeft;
+      track.setPointerCapture(e.pointerId);
+      track.classList.add("is-dragging");
+    });
+
+    track.addEventListener("pointermove", function (e) {
+      if (!isDragging) return;
+      var delta = e.clientX - startX;
+      if (Math.abs(delta) > 3) dragMoved = true;
+      track.scrollLeft = startScroll - delta;
+    });
+
+    function endDrag() {
+      isDragging = false;
+      track.classList.remove("is-dragging");
+    }
+    track.addEventListener("pointerup", endDrag);
+    track.addEventListener("pointercancel", endDrag);
+    track.addEventListener("pointerleave", endDrag);
+
+    // Prevent the drag from also triggering a click on whatever is under
+    // the cursor (e.g. text selection) once the user has actually dragged.
+    track.addEventListener("click", function (e) {
+      if (dragMoved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
   }
 })();
